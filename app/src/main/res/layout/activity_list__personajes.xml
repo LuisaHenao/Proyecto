@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0efdb"
+    tools:context=".List_Personajes">
+
+    <ListView
+        android:id="@+id/ListPersonajes"
+        android:layout_width="371dp"
+        android:layout_height="534dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMale" >
+
+    </ListView>
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnTodos"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#0d6d61"
+        android:text="Todos"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toStartOf="@+id/btnMale"
+        app:layout_constraintStart_toEndOf="@+id/btnInicio"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:pressedGlowSize="80dp"
+        app:unpressedGlowSize="20dp" />
+
+    <ec.dina.btefonts.TextViewFonts
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Personajes"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#7a522c"
+        android:textSize="30sp"
+        app:dm_font="kg_ShePersisted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnMale"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#fcf103"
+        android:text="Hombres"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toStartOf="@+id/btnFemale"
+        app:layout_constraintStart_toEndOf="@+id/btnTodos"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:pressedGlowSize="80dp"
+        app:unpressedGlowSize="20dp" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnFemale"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#fcf103"
+        android:text="Mujeres"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMale"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:pressedGlowSize="80dp"
+        app:unpressedGlowSize="20dp" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnInicio"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#d5442f"
+        android:text="Inicio"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toStartOf="@+id/btnTodos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

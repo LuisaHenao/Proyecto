@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0efdb"
+    tools:context=".list_personajes_female">
+
+    <ec.dina.btefonts.TextViewFonts
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Personajes Mujeres"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#7a522c"
+        android:textSize="30sp"
+        app:dm_font="kg_ShePersisted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnTodosF"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#0d6d61"
+        android:text="Todos"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toStartOf="@+id/btnMaleF"
+        app:layout_constraintStart_toEndOf="@+id/btnInicioF"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnMaleF"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#fcf103"
+        android:text="Hombres"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toStartOf="@+id/btnFemaleF"
+        app:layout_constraintStart_toEndOf="@+id/btnTodosF"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnFemaleF"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#fcf103"
+        android:text="Mujeres"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMaleF"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ListView
+        android:id="@+id/ListPersonajesFemale"
+        android:layout_width="371dp"
+        android:layout_height="534dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaleF" />
+
+    <ec.dina.btefonts.ButtonFonts
+        android:id="@+id/btnInicioF"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#d5442f"
+        android:text="Inicio"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:dm_font="kg_RiseUP"
+        app:layout_constraintEnd_toStartOf="@+id/btnTodosF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
